@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Nha sach XYZ</title>
+    <link rel="shortcut icon" href="Image/images/library-icon.ico">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #b4d8e8;
+            width: 100%;
+          
+        }
+        nav.header{
+            background-image: url(Image/images/bg6.gif);
+            display: flex;
+        }
+        div.Quangcao{
+            display: flex;
+            margin:auto;
+        }
+        div.Quangcao>div.adsbanner{
+            background-color: teal;
+            padding:6px;
+            border-style: solid; 
+        }
+        nav.header img{
+            float:left;
+            width: 100px;
+        }
+        nav.header h1{
+            float:left;
+        }
+        nav.header form{
+            margin-left: auto;
+        }
+    /*MENU*/
+    ul{
+            
+            padding:0;
+            margin:0;
+            list-style-type: none;
+           
+        }
+        nav>ul.Menu{
+            display:flex;
+           
+            border-right-color: #ffffff;
+            border-right-style: solid;
+        }
+        ul.Menu{
+            background-color: #0099ff;
+        }
+        
+        ul.Menu>li{
+            max-width: 200px;
+            border-right-color: #ffffff;
+            border-right-style: solid;
+        }
+        ul.Menu li a{
+            text-decoration: none;
+            display:block;
+            padding:20px
+        }
+        ul.Menu_con_nd li{
+            background-image: linear-gradient(180deg,#0099ff, #b4d8e8);
+        }
+        ul.Menu li>a:hover{
+            background-color: #0000ff;
+            color: white;
+            
+        }
+        .Menu_con_nd{
+            display:none;
+        }
+        .Menu_con:hover .Menu_con_nd{
+            display:block;
+            position: absolute;
+        }
+        .Menungang>li{
+            background-image: linear-gradient(180deg,#0099ff, #b4d8e8);
+            height: max-content;
+         
+        }
+        .Menungang>li>a{
+            
+            text-decoration: none;
+            display:block;
+            padding:10px;
+            
+        }
+        .Menungang>li>a:hover{
+            background-color: #0000ff;
+            color: white;
+        }
+        .Menungang1{
+            border-right-style: solid;
+            border-right-color: #ffffff;
+            width: 17%;
+            float:left;
+        }
+        .DS{
+            margin:0px;
+            padding: 10px;
+        }
+       div.items{
+           width: 82%;
+           display:flex;
+           flex-wrap:wrap;
+        
+       }
+        div.item{
+            width: 18%;
+            padding: 10px;
+        }
+        div.item img{
+            width: 100%;
+        }
+        div.item p{
+            text-align: center;
+            padding:10px;
+            margin:0px;
+        }
+        div.footer{
+            background-image: linear-gradient(180deg,#0099ff, #b4d8e8);
+            height: 100px;
+            line-height: 100px;
+        }
+        div.footer p{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header">
+        
+        <img class="logo" src="Image/images/logo.ico" alt="Nha sach XYZ">
+        <h1 class="title">NHÀ SÁCH XYZ</h1>
+        <div class="Quangcao">
+            <div class="adsbanner">
+                <p>Liên hệ quảng cáo</p>
+            </div>
+            <div class="adsbanner">
+                <p>Liên hệ quảng cáo</p>
+            </div>
+            <div class="adsbanner">
+                <p>Liên hệ quảng cáo</p>
+            </div>
+        </div>
+        <form>
+            <input type="text" placeholder="Tìm kiếm sách">
+            <button type="submit">Find</button>
+        </form>
+    </nav>
+    <!--MENU-->
+    <nav>
+        <ul class="Menu">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="Menu_con">
+                <a href="#">Danh mục sách</a>
+                <ul class="Menu Menu_con_nd">
+                    <li><a href="#">Công nghệ thông tin</a></li>
+                    <li><a href="#">Công nghệ sinh học</a></li>
+                    <li><a href="#">Xây dựng</a></li>
+                    <li><a href="#">Y học</a></li>
+                    <li><a href="#">Kinh tế</a></li>
+                    <li><a href="#">Giáo dục</a></li>
+                    <li><a href="#">Nông nghiệp</a></li>
+                    <li><a href="#">Kỹ thuật điện</a></li>
+                    <li><a href="#">Tâm lý học</a></li>
+                    <li><a href="#">Khác</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <!--MENU NGANG-->
+    <nav class="Menungang1">
+        <h1 class="DS">DANH MỤC SÁCH</h1>
+        <ul class="Menungang">
+            <li>
+                <li><a href="#">Công nghệ thông tin</a></li>
+                    <li><a href="#">Công nghệ sinh học</a></li>
+                    <li><a href="#">Xây dựng</a></li>
+                    <li><a href="#">Y học</a></li>
+                    <li><a href="#">Kinh tế</a></li>
+                    <li><a href="#">Giáo dục</a></li>
+                    <li><a href="#">Nông nghiệp</a></li>
+                    <li><a href="#">Kỹ thuật điện</a></li>
+                    <li><a href="#">Tâm lý học</a></li>
+                    <li><a href="#">Khác</a></li>
+            </li>
+        </ul>
+    </nav>
+    <div class="items"> 
+        <div class="item">
+            <div>
+                <img src="Image/images/books/book1.jpg"/>
+            </div>
+            <p>Lập trình hướng đối tượng</p>
+        </div>
+        <div class="item">
+            <div>
+                <img src="Image/images/books/book2.jpg"/>
+            </div>
+            <p>Phát triển phần mềm mã nguồn mở</p>
+        </div>
+        <div class="item">
+            <div>
+                <img src="Image/images/books/book3.jpg"/>
+            </div>
+            <p>Lập trình truyền thông</p>
+        </div>
+        <div class="item">
+            <div>
+                <img src="Image/images/books/book4.jpg"/>
+            </div>
+            <p>Kỹ thuật lập trình</p>
+        </div>
+        <div class="item">
+            <div>
+                <img src="Image/images/books/book5.jpg"/>
+            </div>
+            <p>Bảo mật thông tin</p>
+        </div>
+        <div class="item">
+            <div>
+                <img src="Image/images/books/book6.jpg"/>
+            </div>
+            <p>Cấu trúc dữ liệu và giải thuật</p>
+        </div>
+        <div class="item">
+            <div>
+                <img src="Image/images/books/book7.jpg"/>
+            </div>
+            <p>Máy tính và mạng máy tính</p>
+        </div>
+        <div class="item">
+            <div>
+                <img src="Image/images/books/book8.jpg"/>
+            </div>
+            <p>Phân tích và thiết kế giải thuật</p>
+        </div>
+        <div class="item">
+            <div>
+                <img src="Image/images/books/book9.jpg"/>
+            </div>
+            <p>Phát triển ứng dụng web</p>
+        </div>
+        <div class="item">
+            <div>
+                <img src="Image/images/books/book10.jpg"/>
+            </div>
+            <p>Lập trình Android</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Nhà sách XYZ &#169; 2017</p>
+    </div>
+</body>
